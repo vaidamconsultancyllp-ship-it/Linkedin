@@ -10,8 +10,10 @@ whole workflow is `/linkedin-post` (`.claude/commands/linkedin-post.md`).
 - `scripts/linkedin_auth.py` – one-time OAuth login; saves token + person URN to `.env`
 - `scripts/next_hook.py` – rotating opening line from `data/hooks.json`
 - `scripts/build_carousel.py` – `content.json` → `slide-N.png` + `carousel.pdf`
+- `scripts/build_infographic.py` – `infographic.json` → one structured `infographic.png`
 - `scripts/linkedin_post.py` – publishes text / PDF carousel / image (`--dry-run` supported)
-- `scripts/plan_today.py` – today's pillar from `data/schedule.json`; stops on weekends or if already posted
+- `scripts/plan_today.py` – today's pillar (`data/schedule.json`) and planned topic (`data/plan.json`); stops if already posted
+- `scripts/export_plan.py` – exports `data/plan.json` to Excel and PDF in `plan/`
 - `scripts/record_post.py` – appends a published post to `data/history.json`
 - `/linkedin-daily` (`.claude/commands/linkedin-daily.md`) – the unattended daily run used by the schedule
 - `output/<YYYY-MM-DD>/` – each run's `post.txt`, `content.json`, slides, PDF (git-ignored)
@@ -40,6 +42,15 @@ whole workflow is `/linkedin-post` (`.claude/commands/linkedin-post.md`).
 4. **Costly mistakes** – common compliance errors and what they cost, with the fix.
 5. **Founder checklists** – "before you raise money", "first 90 days after
    incorporation", "year-end compliance".
+
+6. **Founder FAQ** (Saturdays) – one common question answered clearly.
+7. **Myth vs fact** (Sundays) – a common compliance myth and the real rule.
+
+Posting runs every day at 10 AM IST. Wednesdays and Fridays post a one-page
+infographic (`scripts/build_infographic.py`); other days post a carousel.
+Brand colours (from the logo): navy #021422, teal #028682, blue #008FB5,
+gold #EFAA30, orange #EB642D. The topic for each day is planned in
+`data/plan.json` (60 days ahead; exported as `plan/content-plan-*.xlsx/pdf`).
 
 AI/tech news only when it directly changes compliance or taxes for Indian
 businesses (e.g. a new e-invoicing or MCA portal rule).

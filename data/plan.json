@@ -1,0 +1,482 @@
+[
+  {
+    "date": "2026-09-27",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'No business this year, so no ROC filing'",
+    "key_points": "Every company files AOC-4 and MGT-7 even with zero activity; late fees still apply.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-09-28",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "Final countdown: Tax audit report & AGM – due 30 Sep",
+    "key_points": "What to finish in the last 72 hours; no extension notified unless CBDT announces one.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-09-29",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: Income-tax Act, 2025 – what changes for businesses",
+    "key_points": "New Act in force from 1 Apr 2026; FY 2025-26 filings still under the 1961 Act.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-09-30",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "Pvt Ltd vs LLP vs OPC – which should you choose?",
+    "key_points": "Liability, compliance load, funding, cost – side by side.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-01",
+    "day": "Thu",
+    "pillar": "Costly mistakes",
+    "topic": "Missed the AGM deadline? What happens next",
+    "key_points": "Consequences, penalties and how to regularise.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-02",
+    "day": "Fri",
+    "pillar": "Founder checklists",
+    "topic": "October compliance checklist for companies",
+    "key_points": "Everything due this month in one list.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-03",
+    "day": "Sat",
+    "pillar": "Founder FAQ",
+    "topic": "Do I need GST registration? Turnover limits explained",
+    "key_points": "₹40 lakh / ₹20 lakh thresholds, special-category states, compulsory cases.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-04",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'LLPs never need an audit'",
+    "key_points": "Audit required above ₹40 lakh turnover or ₹25 lakh contribution.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-05",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "October deadlines: TDS 7th, GSTR-1 11th, TCS return & ADT-1 15th, GSTR-3B 20th",
+    "key_points": "Dates, who they apply to, late fees.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-06",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: GST Invoice Management System (IMS) basics",
+    "key_points": "What IMS changes for input tax credit.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-07",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "DPIIT Startup India recognition – eligibility & benefits",
+    "key_points": "Who qualifies, tax and funding benefits, how to apply.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-08",
+    "day": "Thu",
+    "pillar": "Costly mistakes",
+    "topic": "Mixing personal and business bank accounts",
+    "key_points": "Why it causes tax and audit trouble; the fix.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-09",
+    "day": "Fri",
+    "pillar": "Founder checklists",
+    "topic": "First 90 days after incorporation – checklist",
+    "key_points": "Bank account, first auditor, INC-20A, PAN/TAN, GST if needed.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-10",
+    "day": "Sat",
+    "pillar": "Founder FAQ",
+    "topic": "DIN and DIR-3 KYC – now once every 3 years",
+    "key_points": "Who files, when the next due date is, what happens if missed.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-11",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'Udyam/MSME registration is only for manufacturers'",
+    "key_points": "Service businesses qualify too; benefits.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-12",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "This week: ADT-1 & TCS return (15 Oct), GSTR-3B (20 Oct), AOC-4 (29 Oct)",
+    "key_points": "Week-ahead deadline list.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-13",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: E-invoicing above ₹5 crore turnover",
+    "key_points": "Who must e-invoice and common errors.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-14",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "GST composition vs regular scheme",
+    "key_points": "Tax rate, ITC, invoicing limits – which suits you.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-15",
+    "day": "Thu",
+    "pillar": "Costly mistakes",
+    "topic": "Forgetting ADT-1 after the AGM (due today for 30 Sep AGMs)",
+    "key_points": "Late fee and how to file now.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-16",
+    "day": "Fri",
+    "pillar": "Founder checklists",
+    "topic": "AOC-4 filing checklist – documents you need",
+    "key_points": "Financials, board report, auditor's report, attachments.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-17",
+    "day": "Sat",
+    "pillar": "Founder FAQ",
+    "topic": "Can an NRI or foreigner be a director in India?",
+    "key_points": "Resident-director rule, DIN, documents.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-18",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'Small private companies don't need an auditor'",
+    "key_points": "Every company needs a statutory audit.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-19",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "Big week ahead: GSTR-3B 20 Oct, AOC-4 29 Oct, LLP Form 8 30 Oct, ITR/TDS Q2/MSME-1 31 Oct",
+    "key_points": "Full late-October list.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-20",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: GST registration – Aadhaar authentication & bank account validation",
+    "key_points": "Why new registrations get stuck and how to avoid it.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-21",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "MSME Form 1 & the 45-day rule for paying MSME suppliers",
+    "key_points": "What the rule is and why it matters for your tax.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-22",
+    "day": "Thu",
+    "pillar": "Costly mistakes",
+    "topic": "Paying MSME suppliers after 45 days",
+    "key_points": "The expense can be disallowed for tax; the fix.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-23",
+    "day": "Fri",
+    "pillar": "Founder checklists",
+    "topic": "LLP annual compliance: Form 8, Form 11, ITR",
+    "key_points": "Forms, dates, ₹100/day late fees.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-24",
+    "day": "Sat",
+    "pillar": "Founder FAQ",
+    "topic": "Missed AOC-4? The ₹100-a-day late fee explained",
+    "key_points": "How it adds up and how to file late.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-25",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'Once registered, a company can be left alone'",
+    "key_points": "Annual filings, penalties, strike-off risk.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-26",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "Final week: AOC-4 29 Oct, LLP Form 8 30 Oct, ITR (audit) / TDS Q2 / MSME-1 31 Oct",
+    "key_points": "Last-week reminder.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-27",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: FEMA / RBI reporting for foreign investment",
+    "key_points": "FC-GPR and annual FLA return basics.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-28",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "How an NRI can start a company in India",
+    "key_points": "Automatic route, documents, steps, timeline.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-29",
+    "day": "Thu",
+    "pillar": "Costly mistakes",
+    "topic": "AOC-4 filing mistakes that get forms rejected",
+    "key_points": "Wrong attachments, missing signatures, XBRL applicability.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-10-30",
+    "day": "Fri",
+    "pillar": "Founder checklists",
+    "topic": "Company ITR (audit cases) checklist – due 31 Oct",
+    "key_points": "Documents and checks before filing.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-10-31",
+    "day": "Sat",
+    "pillar": "Founder FAQ",
+    "topic": "Proprietorship vs company – when should you convert?",
+    "key_points": "Signs it's time, what conversion involves.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-01",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'A GST registration can never be cancelled'",
+    "key_points": "When and how to cancel voluntarily.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-02",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "November deadlines: TDS 7th, GSTR-1 11th, GSTR-3B 20th, MGT-7 28th, ITR (TP) 30th",
+    "key_points": "Dates, who they apply to, late fees.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-03",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: Changes to the MCA V3 portal / e-forms",
+    "key_points": "What changed in filings this year.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-04",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "MGT-7 vs MGT-7A – which annual return form?",
+    "key_points": "Small companies & OPCs vs others.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-11-05",
+    "day": "Thu",
+    "pillar": "Costly mistakes",
+    "topic": "Ignoring GST notices on the portal",
+    "key_points": "Deadlines to reply, what happens if you don't.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-06",
+    "day": "Fri",
+    "pillar": "Founder checklists",
+    "topic": "Before you raise money – compliance checklist",
+    "key_points": "What investors check in due diligence.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-11-07",
+    "day": "Sat",
+    "pillar": "Founder FAQ",
+    "topic": "Convertible notes vs equity for early-stage startups",
+    "key_points": "How each works in India, who can issue.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-08",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'Registered office must be a commercial property'",
+    "key_points": "Residential address allowed with NOC and proofs.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-09",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "This week: GSTR-1 11 Nov, GSTR-3B 20 Nov, MGT-7 28 Nov",
+    "key_points": "Week-ahead deadline list.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-10",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: New TDS/TCS rules for FY 2026-27",
+    "key_points": "Rate or threshold changes businesses must apply.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-11",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "Increasing share capital – SH-7 and what it involves",
+    "key_points": "Steps, fees, filings.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-11-12",
+    "day": "Thu",
+    "pillar": "Costly mistakes",
+    "topic": "Issuing shares without proper valuation and PAS-3 filing",
+    "key_points": "Penalties and the fix.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-13",
+    "day": "Fri",
+    "pillar": "Founder checklists",
+    "topic": "Monthly GST compliance checklist",
+    "key_points": "GSTR-1, GSTR-3B, ITC reconciliation, e-way bills.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-11-14",
+    "day": "Sat",
+    "pillar": "Founder FAQ",
+    "topic": "How long does company registration take & what documents are needed?",
+    "key_points": "Step-by-step timeline.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-15",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'Professional tax is only for salaried employees'",
+    "key_points": "Businesses and directors in many states pay it too.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-16",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "This week: GSTR-3B 20 Nov, MGT-7 28 Nov, ITR (transfer pricing) 30 Nov",
+    "key_points": "Week-ahead deadline list.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-17",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: Startup India / DPIIT benefit updates",
+    "key_points": "Any change to eligibility or tax benefits.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-18",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "When does a director get disqualified?",
+    "key_points": "Non-filing triggers and how to avoid them.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-11-19",
+    "day": "Thu",
+    "pillar": "Costly mistakes",
+    "topic": "Not reporting changes to the ROC on time",
+    "key_points": "New director, address change, share transfer – 30-day filings.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-20",
+    "day": "Fri",
+    "pillar": "Founder checklists",
+    "topic": "MGT-7 annual return checklist",
+    "key_points": "Data you need ready before filing.",
+    "format": "infographic"
+  },
+  {
+    "date": "2026-11-21",
+    "day": "Sat",
+    "pillar": "Founder FAQ",
+    "topic": "Closing a company: strike-off (STK-2) explained",
+    "key_points": "When you can use it, steps, timeline.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-22",
+    "day": "Sun",
+    "pillar": "Myth vs fact",
+    "topic": "Myth: 'Small businesses can skip bookkeeping'",
+    "key_points": "Why records matter for tax, loans and audits.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-23",
+    "day": "Mon",
+    "pillar": "Deadline alerts",
+    "topic": "Ahead: MGT-7 28 Nov, ITR (TP) 30 Nov; December preview – advance tax 15 Dec, GSTR-9 31 Dec",
+    "key_points": "Week-ahead plus December.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-24",
+    "day": "Tue",
+    "pillar": "Rule changes",
+    "topic": "Rule change of the week – picked on the day from the latest MCA / CBDT / GST / RBI notifications. Backup topic: GST annual return (GSTR-9/9C) changes",
+    "key_points": "Who must file and what's new.",
+    "format": "carousel"
+  },
+  {
+    "date": "2026-11-25",
+    "day": "Wed",
+    "pillar": "Explainers",
+    "topic": "Advance tax – who pays and the 15 December instalment",
+    "key_points": "How much, how to calculate, interest for missing it.",
+    "format": "infographic"
+  }
+]

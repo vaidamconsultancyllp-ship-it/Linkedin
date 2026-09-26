@@ -2,10 +2,40 @@
   "timezone_offset_hours": 5.5,
   "avoid_repeat_days": 60,
   "weekdays": {
-    "Monday": {"pillar": "Deadline alerts", "why_label": "WHAT TO DO"},
-    "Tuesday": {"pillar": "Rule changes", "why_label": "WHAT TO DO"},
-    "Wednesday": {"pillar": "Explainers", "why_label": "KEY POINT"},
-    "Thursday": {"pillar": "Costly mistakes", "why_label": "THE FIX"},
-    "Friday": {"pillar": "Founder checklists", "why_label": "DO THIS"}
+    "Monday": {
+      "pillar": "Deadline alerts",
+      "why_label": "WHAT TO DO",
+      "format": "carousel"
+    },
+    "Tuesday": {
+      "pillar": "Rule changes",
+      "why_label": "WHAT TO DO",
+      "format": "carousel"
+    },
+    "Wednesday": {
+      "pillar": "Explainers",
+      "why_label": "KEY POINT",
+      "format": "infographic"
+    },
+    "Thursday": {
+      "pillar": "Costly mistakes",
+      "why_label": "THE FIX",
+      "format": "carousel"
+    },
+    "Friday": {
+      "pillar": "Founder checklists",
+      "why_label": "DO THIS",
+      "format": "infographic"
+    },
+    "Saturday": {
+      "pillar": "Founder FAQ",
+      "why_label": "THE ANSWER",
+      "format": "carousel"
+    },
+    "Sunday": {
+      "pillar": "Myth vs fact",
+      "why_label": "THE FACT",
+      "format": "carousel"
+    }
   }
 }

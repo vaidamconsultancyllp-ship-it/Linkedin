@@ -29,11 +29,16 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1080, 1350
 MARGIN = 90
-BG = (15, 17, 26)
-PANEL = (27, 31, 46)
-TEXT = (240, 242, 248)
-MUTED = (150, 158, 180)
-ACCENT = (10, 132, 255)
+# Vaidam Consultancy logo palette
+BG = (2, 20, 34)          # navy #021422
+PANEL = (12, 38, 56)      # lighter navy
+TEXT = (255, 255, 255)
+MUTED = (165, 182, 196)
+TEAL = (2, 134, 130)      # #028682
+BLUE = (0, 143, 181)      # #008FB5
+GOLD = (239, 170, 48)     # #EFAA30
+ORANGE = (235, 100, 45)   # #EB642D
+ACCENT = GOLD
 
 FONT_DIRS = [
     Path("/usr/share/fonts/truetype/dejavu"),
@@ -80,7 +85,8 @@ def draw_block(draw, xy, text, fnt, fill, max_width, spacing=1.3):
 def frame(page, total, author):
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, W, 14], fill=ACCENT)
+    for i, color in enumerate((TEAL, BLUE, GOLD, ORANGE)):  # logo bars
+        d.rectangle([i * W // 4, 0, (i + 1) * W // 4, 14], fill=color)
     footer = font(28)
     d.text((MARGIN, H - 90), author, font=footer, fill=MUTED)
     label = f"{page}/{total}"
@@ -95,7 +101,7 @@ def cover(c, total):
     img, d = frame(1, total, c.get("author", ""))
     d.text((MARGIN, 200), c.get("date", "").upper(), font=font(34, True), fill=ACCENT)
     y = draw_block(d, (MARGIN, 280), c["title"], font(104, True), TEXT, W - 2 * MARGIN, 1.15)
-    d.rectangle([MARGIN, y + 40, MARGIN + 160, y + 52], fill=ACCENT)
+    d.rectangle([MARGIN, y + 40, MARGIN + 160, y + 52], fill=TEAL)
     draw_block(d, (MARGIN, y + 100), c.get("subtitle", ""), font(48), MUTED, W - 2 * MARGIN)
     return img
 
@@ -107,8 +113,8 @@ def story(s, n, page, total, author, why_label):
     if s.get("tag"):
         tag = font(30, True)
         width = d.textlength(s["tag"], font=tag)
-        d.rounded_rectangle([MARGIN, top, MARGIN + width + 48, top + 58], radius=29, fill=ACCENT)
-        d.text((MARGIN + 24, top + 12), s["tag"], font=tag, fill=BG)
+        d.rounded_rectangle([MARGIN, top, MARGIN + width + 48, top + 58], radius=29, fill=TEAL)
+        d.text((MARGIN + 24, top + 12), s["tag"], font=tag, fill=TEXT)
         top += 100
     y = draw_block(d, (MARGIN, top), s["headline"], font(62, True), TEXT, W - 2 * MARGIN, 1.2)
     y = draw_block(d, (MARGIN, y + 40), s["summary"], font(38), TEXT, W - 2 * MARGIN, 1.4)

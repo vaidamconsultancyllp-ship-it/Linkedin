@@ -1,6 +1,7 @@
 """Add a published post to data/history.json.
 
     python3 scripts/record_post.py output/2026-09-28/content.json "<pillar>" "<post url>"
+    python3 scripts/record_post.py output/2026-09-30/infographic.json "<pillar>" "<post url>"
 """
 import json
 import sys
@@ -20,7 +21,8 @@ def main():
         "date": content_path.parent.name,
         "pillar": pillar,
         "title": content["title"],
-        "topics": [s["headline"] for s in content["stories"]],
+        "topics": [s["headline"] for s in content.get("stories", [])]
+                  or [c["heading"] for r in content.get("rows", []) for c in r.get("cards", [])],
         "url": url,
     })
     path.write_text(json.dumps(history, indent=2, ensure_ascii=False) + "\n")

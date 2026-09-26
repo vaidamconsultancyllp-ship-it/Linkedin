@@ -25,15 +25,14 @@ on another machine. Open Claude Code in this folder and say:
 
 - [x] **GitHub:** connected; code pushed to branch `claude/video-analysis-dor-m3-1kls85`.
 - [x] **LinkedIn app + login:** done 26 Sep 2026 (token lasts ~60 days).
-- [ ] **For cloud daily runs**, in the cloud environment settings (title-bar
+- [x] **For cloud daily runs**, in the cloud environment settings (title-bar
       environment menu → Edit):
   - env vars `LINKEDIN_ACCESS_TOKEN`, `LINKEDIN_PERSON_URN`, `LINKEDIN_VERSION=202509`
     (never paste tokens into chat)
   - network access: allow `api.linkedin.com` plus mca.gov.in, incometax.gov.in,
     gst.gov.in, cbic-gst.gov.in, rbi.org.in (or full access)
   - setup script: `pip install -r requirements.txt`
-- [ ] **Confirm defaults:** 9:00 AM IST, Mon–Fri, fully automatic
-      (change days in `data/schedule.json`).
+- [x] **Schedule:** daily at 10 AM IST, fully automatic.
 
 ## Open questions for the user
 
@@ -54,13 +53,23 @@ on another machine. Open Claude Code in this folder and say:
 
 ## Scheduled (Claude Code Routines)
 
-- **Vaidam LinkedIn daily post** (`trig_01YAyqhVeMaVwqwkR2DWs6GW`): 8:51 AM IST,
-  Mon–Fri, fresh cloud session each time, runs `/linkedin-daily`, push + email
-  summary. First run Mon 28 Sep 2026. Needs the environment variables and
-  network access below to be saved first.
+- **Vaidam LinkedIn daily post** (`trig_01YAyqhVeMaVwqwkR2DWs6GW`): every day,
+  starts 9:51 AM IST so the post is live around 10 AM; fresh cloud session each
+  time, runs `/linkedin-daily`, push + email summary. First real test post went
+  out 26 Sep 2026. Scheduled runs can't push `data/history.json` (no GitHub
+  write access) – the fixed topic plan in `data/plan.json` prevents repeats.
 - **Refresh LinkedIn token reminder** (`trig_01JNUxpSjW1N8FaLXRA3cUHk`):
   20 Nov 2026 (token issued 26 Sep, expires ~25 Nov).
 - LinkedIn app "Vaidam Post Autopilot" created; login done on the laptop.
+
+## Content plan & design (26 Sep 2026)
+
+- `data/plan.json`: one topic per day, 27 Sep – 25 Nov 2026; exported to
+  `plan/content-plan-2026-09-27-to-2026-11-25.xlsx/.pdf` (`scripts/export_plan.py`).
+- Weekly themes: Mon deadlines · Tue rule changes · Wed explainers (infographic) ·
+  Thu costly mistakes · Fri checklists (infographic) · Sat founder FAQ · Sun myth vs fact.
+- Carousels and infographics use the logo colours (navy, teal, blue, gold, orange).
+- Next plan: extend `data/plan.json` before 25 Nov and rerun the export.
 
 ## Costs
 

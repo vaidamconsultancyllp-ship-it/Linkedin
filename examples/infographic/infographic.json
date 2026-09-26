@@ -1,0 +1,47 @@
+{
+  "title": "Pvt Ltd vs LLP vs OPC",
+  "subtitle": "Which business structure should you choose?",
+  "tagline": "Ownership, compliance and funding compared – a simple guide for Indian founders",
+  "badge": ["By Vaidam Consultancy LLP", "vaidamconsultancy.in", "For education purposes"],
+  "rows": [
+    {"type": "cards", "cards": [
+      {"heading": "Private Limited (Pvt Ltd)", "highlight": "Best for raising funds", "bullets": [
+        "Minimum 2 directors and 2 shareholders",
+        "Liability limited to the shares you hold",
+        "Can issue shares to investors and ESOPs to staff",
+        "Highest compliance: statutory audit every year"]},
+      {"heading": "LLP", "highlight": "Best for partners & firms", "bullets": [
+        "Minimum 2 designated partners",
+        "Limited liability for every partner",
+        "Lower compliance: audit only above ₹40 lakh turnover or ₹25 lakh contribution",
+        "Cannot issue shares to investors"]},
+      {"heading": "One Person Company (OPC)", "highlight": "Best for solo founders", "bullets": [
+        "Just 1 member (an individual) plus 1 nominee",
+        "Limited liability with full control",
+        "Statutory audit required every year",
+        "Convert to Pvt Ltd when you add co-founders or investors"]}
+    ]},
+    {"type": "flow", "heading": "How to choose – ask these questions in order", "steps": [
+      {"title": "Raising investors soon?", "text": "Yes → Pvt Ltd. Investors need shares."},
+      {"title": "Starting alone?", "text": "Yes → OPC, and convert later if you grow."},
+      {"title": "Partners in a service or professional firm?", "text": "Yes → LLP."},
+      {"title": "Want the lowest yearly compliance?", "text": "LLP is usually the lightest of the three."},
+      {"title": "Still unsure?", "text": "Talk to a CS/CA before you register – changing later costs time and money."}
+    ]},
+    {"type": "mixed", "cards": [
+      {"heading": "Compliance at a glance", "span": 2, "table": [
+        ["Aspect", "Pvt Ltd", "LLP", "OPC"],
+        ["Minimum people", "2 directors + 2 shareholders", "2 designated partners", "1 member + 1 nominee"],
+        ["Annual ROC filings", "AOC-4 + MGT-7", "Form 8 + Form 11", "AOC-4 + MGT-7A"],
+        ["Statutory audit", "Always", "Only above ₹40 lakh turnover or ₹25 lakh contribution", "Always"],
+        ["Equity funding", "Yes", "No shares", "Convert to Pvt Ltd first"]
+      ]},
+      {"heading": "Important points", "bullets": [
+        "All three give limited liability – your personal assets are protected",
+        "Late ROC filings cost ₹100 per day per form, with no upper limit",
+        "Pick the structure for where you want to be in 3 years, not just today"]}
+    ]}
+  ],
+  "footer": "Not sure which fits you? Comment \"STRUCTURE\" or DM us",
+  "disclaimer": "General information, not legal advice"
+}
