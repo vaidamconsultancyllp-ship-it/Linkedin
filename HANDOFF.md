@@ -23,7 +23,7 @@ on another machine. Open Claude Code in this folder and say:
 
 ## Blocked on (user actions)
 
-- [ ] **GitHub:** reconnect at https://claude.ai/connect-github so Claude can push.
+- [x] **GitHub:** connected; code pushed to branch `claude/video-analysis-dor-m3-1kls85`.
 - [ ] **LinkedIn app + login:** create the app (README → Setup), then run
       `python3 scripts/linkedin_auth.py` on the laptop. Token lasts ~60 days.
 - [ ] **For cloud daily runs**, in the cloud environment settings (title-bar
@@ -33,8 +33,8 @@ on another machine. Open Claude Code in this folder and say:
   - network access: allow `api.linkedin.com` plus mca.gov.in, incometax.gov.in,
     gst.gov.in, cbic-gst.gov.in, rbi.org.in (or full access)
   - setup script: `pip install -r requirements.txt`
-- [ ] **Decide:** posting time (suggested 9:00 AM IST), days (Mon–Fri or
-      Mon–Sat), fully automatic vs. draft sent for review first.
+- [ ] **Confirm defaults:** 9:00 AM IST, Mon–Fri, fully automatic
+      (change days in `data/schedule.json`).
 
 ## Open questions for the user
 
@@ -43,15 +43,21 @@ on another machine. Open Claude Code in this folder and say:
 - Sign explainer posts as "CS Harshita Jhawar, Vaidam Consultancy"?
 - Share a few past LinkedIn posts so the tone can match.
 
-## Next build steps (Claude)
+## Built for daily posting
 
-1. Weekday pillar plan: Mon deadlines · Tue rule change/news · Wed explainer ·
-   Thu costly mistake · Fri founder checklist.
-2. `data/history.json` of posted topics; skip repeats within 60 days; commit it after each run.
-3. Guards: skip the day if facts can't be verified; never post twice a day;
-   on 401 stop and tell the user to re-login.
-4. Create the daily Claude Code Routine at the chosen time, plus a reminder
-   every ~55 days to refresh the LinkedIn token.
+- `data/schedule.json`: Mon deadlines · Tue rule change · Wed explainer ·
+  Thu costly mistake · Fri founder checklist (times in IST, Mon–Fri).
+- `scripts/plan_today.py` + `data/history.json`: no weekend posts, never
+  twice a day, no topic repeated within 60 days.
+- `/linkedin-daily`: unattended run with a quality gate (skips the day
+  rather than posting unverified facts), records and pushes the history.
+- `linkedin_post.py` stops with a clear message when the token expires (401).
+
+## Still to do (Claude, after the user's setup steps)
+
+1. Test once: `/linkedin-daily` by hand, check the live post.
+2. Create the daily Routine (default 8:5x AM IST Mon–Fri) running `/linkedin-daily`.
+3. Schedule a reminder every ~55 days to refresh the LinkedIn token.
 
 ## Costs
 

@@ -98,6 +98,9 @@ def main():
         post["content"] = {"media": {"title": args.title, "id": urn}}
 
     r = requests.post(f"{API}/posts", headers=headers(token, version), json=post, timeout=30)
+    if r.status_code == 401:
+        raise SystemExit("LinkedIn token expired or invalid (401). "
+                         "Rerun: python3 scripts/linkedin_auth.py and update LINKEDIN_ACCESS_TOKEN.")
     if r.status_code >= 400:
         raise SystemExit(f"LinkedIn API error {r.status_code}: {r.text}")
     post_urn = r.headers.get("x-restli-id", "")

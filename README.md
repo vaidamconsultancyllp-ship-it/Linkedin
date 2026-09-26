@@ -60,7 +60,14 @@ python3 scripts/build_carousel.py examples/content.json
 python3 scripts/linkedin_post.py --text examples/post.txt --pdf examples/carousel.pdf --title "This Week in AI" --dry-run
 ```
 
-## Run it on a schedule
+## Run it daily
 
-Use a Claude Code Routine / cron to run `claude -p "/linkedin-post"` every
-Monday morning, with `.env` available to the job.
+`/linkedin-daily` is the unattended version: it reads today's pillar from
+`data/schedule.json` (Mon deadlines, Tue rule changes, Wed explainers, Thu
+costly mistakes, Fri checklists), skips weekends and days already posted,
+avoids topics from the last 60 days (`data/history.json`), skips the day if
+facts can't be verified, publishes, then commits the history.
+
+Schedule it as a Claude Code Routine (or cron: `claude -p "/linkedin-daily"`)
+with `LINKEDIN_ACCESS_TOKEN` / `LINKEDIN_PERSON_URN` available and network
+access to `api.linkedin.com`.

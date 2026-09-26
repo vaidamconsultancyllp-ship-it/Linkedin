@@ -11,6 +11,9 @@ whole workflow is `/linkedin-post` (`.claude/commands/linkedin-post.md`).
 - `scripts/next_hook.py` – rotating opening line from `data/hooks.json`
 - `scripts/build_carousel.py` – `content.json` → `slide-N.png` + `carousel.pdf`
 - `scripts/linkedin_post.py` – publishes text / PDF carousel / image (`--dry-run` supported)
+- `scripts/plan_today.py` – today's pillar from `data/schedule.json`; stops on weekends or if already posted
+- `scripts/record_post.py` – appends a published post to `data/history.json`
+- `/linkedin-daily` (`.claude/commands/linkedin-daily.md`) – the unattended daily run used by the schedule
 - `output/<YYYY-MM-DD>/` – each run's `post.txt`, `content.json`, slides, PDF (git-ignored)
 
 ## Who we are
