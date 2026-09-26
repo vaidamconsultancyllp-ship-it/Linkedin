@@ -8,10 +8,14 @@ content.json:
   "subtitle": "5 stories worth your attention",
   "date": "Sep 26, 2026",
   "author": "Your Name",
+  "why_label": "WHAT TO DO",            (optional, default "WHY IT MATTERS")
   "stories": [
-    {"headline": "...", "summary": "...", "why": "...", "source": "The Verge"}
+    {"tag": "DUE 30 SEP 2026", "headline": "...", "summary": "...",
+     "why": "...", "source": "CBDT"}      (tag optional)
   ],
-  "cta": "Follow for a weekly AI & tech briefing"
+  "cta_heading": "Need help?",           (optional)
+  "cta": "DM us or comment 'HELP'",
+  "cta_lines": ["...", "..."]            (optional, up to 3)
 }
 
 Writes slide-1.png ... slide-7.png and carousel.pdf next to content.json.
@@ -96,10 +100,17 @@ def cover(c, total):
     return img
 
 
-def story(s, n, page, total, author):
+def story(s, n, page, total, author, why_label):
     img, d = frame(page, total, author)
     d.text((MARGIN, 150), f"{n:02d}", font=font(150, True), fill=ACCENT)
-    y = draw_block(d, (MARGIN, 360), s["headline"], font(62, True), TEXT, W - 2 * MARGIN, 1.2)
+    top = 360
+    if s.get("tag"):
+        tag = font(30, True)
+        width = d.textlength(s["tag"], font=tag)
+        d.rounded_rectangle([MARGIN, top, MARGIN + width + 48, top + 58], radius=29, fill=ACCENT)
+        d.text((MARGIN + 24, top + 12), s["tag"], font=tag, fill=BG)
+        top += 100
+    y = draw_block(d, (MARGIN, top), s["headline"], font(62, True), TEXT, W - 2 * MARGIN, 1.2)
     y = draw_block(d, (MARGIN, y + 40), s["summary"], font(38), TEXT, W - 2 * MARGIN, 1.4)
     if s.get("why"):
         top = y + 40
@@ -107,7 +118,7 @@ def story(s, n, page, total, author):
         lines = wrap(d, s["why"], body, W - 2 * MARGIN - 80)
         bottom = top + 110 + len(lines) * int(body.size * 1.4)
         d.rounded_rectangle([MARGIN, top, W - MARGIN, bottom], radius=24, fill=PANEL)
-        d.text((MARGIN + 40, top + 35), "WHY IT MATTERS", font=font(28, True), fill=ACCENT)
+        d.text((MARGIN + 40, top + 35), why_label, font=font(28, True), fill=ACCENT)
         draw_block(d, (MARGIN + 40, top + 90), s["why"], body, MUTED, W - 2 * MARGIN - 80, 1.4)
     if s.get("source"):
         d.text((MARGIN, H - 170), f"Source: {s['source']}", font=font(28), fill=MUTED)
@@ -116,10 +127,12 @@ def story(s, n, page, total, author):
 
 def cta(c, total):
     img, d = frame(total, total, c.get("author", ""))
-    y = draw_block(d, (MARGIN, 380), "Found this useful?", font(88, True), TEXT, W - 2 * MARGIN, 1.15)
+    heading = c.get("cta_heading", "Found this useful?")
+    y = draw_block(d, (MARGIN, 380), heading, font(88, True), TEXT, W - 2 * MARGIN, 1.15)
     y = draw_block(d, (MARGIN, y + 50), c.get("cta", "Follow for more"), font(50), MUTED, W - 2 * MARGIN)
-    for i, line in enumerate(["→ Repost to share", "→ Comment your take", "→ Follow for next week"]):
-        d.text((MARGIN, y + 120 + i * 80), line, font=font(42, True), fill=ACCENT)
+    lines = c.get("cta_lines", ["Repost to share", "Comment your take", "Follow for next week"])
+    for i, line in enumerate(lines[:3]):
+        d.text((MARGIN, y + 120 + i * 80), f"→ {line}", font=font(42, True), fill=ACCENT)
     return img
 
 
@@ -131,7 +144,9 @@ def main():
     stories = c["stories"][:5]
     total = len(stories) + 2
     slides = [cover(c, total)]
-    slides += [story(s, i + 1, i + 2, total, c.get("author", "")) for i, s in enumerate(stories)]
+    why_label = c.get("why_label", "WHY IT MATTERS")
+    slides += [story(s, i + 1, i + 2, total, c.get("author", ""), why_label)
+               for i, s in enumerate(stories)]
     slides.append(cta(c, total))
 
     out = path.parent

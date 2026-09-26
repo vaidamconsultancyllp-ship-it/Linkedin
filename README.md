@@ -4,14 +4,16 @@ One prompt → researched post + 7-slide carousel → published on LinkedIn.
 
 A rebuild of the workflow from
 [How I Fully Automated My LinkedIn Posts! (Claude Code)](https://youtu.be/1q0RmehD8SU):
-Claude searches the web for the week's top 5 AI/tech stories, writes a post
-that opens with a rotating hook, builds a 7-slide editorial carousel, and
-posts it straight to your LinkedIn profile.
+The video's pipeline was built for AI news. This version is tuned for
+Vaidam Consultancy LLP: Claude researches Indian business-compliance news and
+upcoming deadlines (MCA/ROC, income tax, GST, LLP, FEMA), writes a post in
+the voice set out in `CLAUDE.md`, builds a 7-slide carousel, and posts it
+straight to your LinkedIn profile.
 
 ```
 /linkedin-post
    │
-   ├─ WebSearch ─────────────► pick top 5 stories
+   ├─ WebSearch ─────────────► 5 deadlines / rule changes
    ├─ next_hook.py ──────────► rotating first line
    ├─ post.txt + content.json
    ├─ build_carousel.py ─────► slide-1..7.png + carousel.pdf
@@ -46,7 +48,7 @@ In Claude Code, from this folder:
 ```
 /linkedin-post --dry-run          # everything except publishing
 /linkedin-post                    # research, build and publish
-/linkedin-post AI agents          # focus the news on a topic
+/linkedin-post GST                # focus on a topic or content pillar
 ```
 
 Each run leaves its files in `output/<date>/`.
