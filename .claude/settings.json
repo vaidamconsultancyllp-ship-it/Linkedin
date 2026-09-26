@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Bash(pip install:*)",
+      "Bash(python3 scripts/plan_today.py:*)",
+      "Bash(python3 scripts/next_hook.py:*)",
+      "Bash(python3 scripts/build_carousel.py:*)",
+      "Bash(python3 scripts/build_infographic.py:*)",
+      "Bash(python3 scripts/linkedin_post.py:*)",
+      "Bash(python3 scripts/record_post.py:*)",
+      "Bash(mkdir:*)",
+      "Bash(git clone:*)",
+      "Bash(git pull:*)",
+      "Bash(git checkout:*)",
+      "Bash(git status:*)",
+      "Bash(git add data/:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
