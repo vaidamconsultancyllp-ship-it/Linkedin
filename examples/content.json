@@ -1,0 +1,14 @@
+{
+  "title": "This Week in AI & Tech",
+  "subtitle": "5 stories worth your attention (sample layout)",
+  "date": "Sample",
+  "author": "Vaidam Consultancy LLP",
+  "stories": [
+    {"headline": "Example: a major lab ships a new flagship model", "summary": "Placeholder summary. /linkedin-post replaces this with a real story from this week's research, two or three short sentences long.", "why": "Placeholder: one line on what this means for businesses.", "source": "Example Source"},
+    {"headline": "Example: AI agents move into everyday office tools", "summary": "Placeholder summary describing the announcement in plain words.", "why": "Placeholder: the practical takeaway.", "source": "Example Source"},
+    {"headline": "Example: new AI regulation takes effect", "summary": "Placeholder summary describing the rule and who it applies to.", "why": "Placeholder: what companies need to do.", "source": "Example Source"},
+    {"headline": "Example: chipmaker reports record demand", "summary": "Placeholder summary with the key figure from the source.", "why": "Placeholder: why compute supply matters.", "source": "Example Source"},
+    {"headline": "Example: startup raises a large round for AI search", "summary": "Placeholder summary of the round and the product.", "why": "Placeholder: what it signals about the market.", "source": "Example Source"}
+  ],
+  "cta": "Follow for a weekly AI & tech briefing"
+}
