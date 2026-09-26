@@ -24,8 +24,7 @@ on another machine. Open Claude Code in this folder and say:
 ## Blocked on (user actions)
 
 - [x] **GitHub:** connected; code pushed to branch `claude/video-analysis-dor-m3-1kls85`.
-- [ ] **LinkedIn app + login:** create the app (README → Setup), then run
-      `python3 scripts/linkedin_auth.py` on the laptop. Token lasts ~60 days.
+- [x] **LinkedIn app + login:** done 26 Sep 2026 (token lasts ~60 days).
 - [ ] **For cloud daily runs**, in the cloud environment settings (title-bar
       environment menu → Edit):
   - env vars `LINKEDIN_ACCESS_TOKEN`, `LINKEDIN_PERSON_URN`, `LINKEDIN_VERSION=202509`
@@ -53,11 +52,15 @@ on another machine. Open Claude Code in this folder and say:
   rather than posting unverified facts), records and pushes the history.
 - `linkedin_post.py` stops with a clear message when the token expires (401).
 
-## Still to do (Claude, after the user's setup steps)
+## Scheduled (Claude Code Routines)
 
-1. Test once: `/linkedin-daily` by hand, check the live post.
-2. Create the daily Routine (default 8:5x AM IST Mon–Fri) running `/linkedin-daily`.
-3. Schedule a reminder every ~55 days to refresh the LinkedIn token.
+- **Vaidam LinkedIn daily post** (`trig_01YAyqhVeMaVwqwkR2DWs6GW`): 8:51 AM IST,
+  Mon–Fri, fresh cloud session each time, runs `/linkedin-daily`, push + email
+  summary. First run Mon 28 Sep 2026. Needs the environment variables and
+  network access below to be saved first.
+- **Refresh LinkedIn token reminder** (`trig_01JNUxpSjW1N8FaLXRA3cUHk`):
+  20 Nov 2026 (token issued 26 Sep, expires ~25 Nov).
+- LinkedIn app "Vaidam Post Autopilot" created; login done on the laptop.
 
 ## Costs
 
