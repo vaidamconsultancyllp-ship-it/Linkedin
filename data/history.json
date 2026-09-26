@@ -2,10 +2,19 @@
   {
     "date": "2026-09-26",
     "pillar": "Deadline alerts",
-    "title": "Test post (compliance deadlines) \u2013 details not captured",
+    "title": "Test post (compliance deadlines) – details not captured",
     "topics": [
       "Tax audit report 30 Sep",
-      "ROC filings due Sep\u2013Oct"
+      "ROC filings due Sep–Oct"
+    ],
+    "url": ""
+  },
+  {
+    "date": "2026-09-27",
+    "pillar": "Myth vs fact",
+    "title": "Myth: 'No business this year, so no ROC filing' (posted early, 12 AM run)",
+    "topics": [
+      "Dormant/no-activity companies still file AOC-4 and MGT-7"
     ],
     "url": ""
   }
