@@ -19,7 +19,7 @@ whole workflow is `/linkedin-post` (`.claude/commands/linkedin-post.md`).
 - **What we do:** company, LLP and startup registration; GST registration and
   returns; ROC/MCA annual filings; ITR and tax compliance; MSME/Udyam; FEMA
   and NRI/foreign company setup in India; legal drafting and investment agreements.
-- **Website / contact:** vaidamconsultancy.com · contact@vaidamconsultancy.com
+- **Website:** vaidamconsultancy.in
 - **Audience:** founders, startups, SMEs, small-business owners, NRIs and
   foreign companies doing business in India.
 - **Goal of every post:** be the account founders save because it keeps them
